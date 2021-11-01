@@ -14,7 +14,7 @@ home.resizable(0,0)#à 0,0 la fênetre ne peut pas être agrandis
 
 #configuration du boutton Traduire
 traduireButton = Button(home, text="Traduire")
-traduireButton.place(x=640, y=120, width=80, height=30)
+traduireButton.place(x=640, y=119, width=80, height=30)
 traduireButton.configure(overrelief="flat")
 traduireButton.configure(relief="flat")
 traduireButton.configure(activebackground="white")
@@ -22,6 +22,17 @@ traduireButton.configure(background="#55bf76")
 traduireButton.configure(foreground="white")
 traduireButton.configure(cursor="hand2")
 traduireButton.configure(font="-family {Poppins SemiBold} -size 10")
-traduireButton.configure(borderwidth=50)
+traduireButton.configure(borderwidth=0)
 
+#configuration du boutton changer de langue
+inversetraduireButton = Button(home, text="OK")
+inversetraduireButton.place(x=593, y=452, width=40, height=30)
+inversetraduireButton.configure(overrelief="flat")
+inversetraduireButton.configure(relief="flat")
+inversetraduireButton.configure(activebackground="white")
+inversetraduireButton.configure(background="#55bf76")
+inversetraduireButton.configure(foreground="white")
+inversetraduireButton.configure(cursor="hand2")
+inversetraduireButton.configure(font="-family {Poppins SemiBold} -size 10")
+inversetraduireButton.configure(borderwidth=0)
 home.mainloop()
