@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e13b6a40-2c67-424a-b21d-f23263dd46f3" name="Changes" comment="boutton, palette">
+    <list default="true" id="e13b6a40-2c67-424a-b21d-f23263dd46f3" name="Changes" comment="bouton 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/frames/frame.png" beforeDir="false" afterPath="$PROJECT_DIR$/views/frames/frame.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/homeScreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/homeScreen.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635747538918</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="bouton 2">
+      <created>1635748115189</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1635748115189</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,6 +114,7 @@
     <MESSAGE value="fichier de base" />
     <MESSAGE value="import tkinter" />
     <MESSAGE value="boutton, palette" />
-    <option name="LAST_COMMIT_MESSAGE" value="boutton, palette" />
+    <MESSAGE value="bouton 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="bouton 2" />
   </component>
 </project>
