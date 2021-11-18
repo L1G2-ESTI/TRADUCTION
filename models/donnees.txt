@@ -1,0 +1,4 @@
+english=french
+anglais=français
+you=tu
+i=je
