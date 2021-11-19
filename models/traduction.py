@@ -18,12 +18,14 @@ def translate():
             if inputString.get() in french:
                 result['text'] = english
                 print(result['text'])
+                return True
             
 
         elif status.get() == 0:
             # translation in french
             if inputString.get() in english:
-                result["text"] = french            
+                result["text"] = french      
+                return True      
     
     file.close()
 
