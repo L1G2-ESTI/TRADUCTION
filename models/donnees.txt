@@ -1,4 +1,5 @@
 english=french
-anglais=français
-you=tu
 i=je
+a=b
+c=h
+q=p

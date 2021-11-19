@@ -5,32 +5,25 @@ from tkinter import *
 
 def translate():
     # open donnees.txt
-
     file = open("donnees.txt")
     datas = file.readlines()
+    for data in datas:
+        dataList = data.split('=')
+        english = dataList[0]
+        french = str(dataList[1]).split('\n')[0] 
     
-    if status.get() == 1:
-        # translation in english
-        for data in datas:
-            dataList = data.split('=') 
-            english = dataList[0]
-            french = dataList[1]
-            if inputString.get() == french:
-                result["text"] = english
-            else:
-                result["text"] = "non trouvé"
+    
+        if status.get() == 1:
+            # translation in english
+            if inputString.get() in french:
+                result['text'] = english
+                print(result['text'])
+            
 
-
-    else:
-        # translation in french
-        for data in datas:   
-            dataList = data.split('=') 
-            english = dataList[0]
-            french = dataList[1]
-            if inputString.get() == english:
-                result["text"] = french
-            else:
-                result["text"] = "non trouvé"
+        elif status.get() == 0:
+            # translation in french
+            if inputString.get() in english:
+                result["text"] = french            
     
     file.close()
 
@@ -67,7 +60,7 @@ toEnglish.grid(row=0, column=1)
 
 resultFrame = Frame(window)
 resultFrame.place(x=0, y=200)
-result = Label(resultFrame, bg="white", width=50, height=10)
+result = Label(resultFrame, text="anglais", bg="white", width=50, height=10)
 result.pack()
 
 window.mainloop()
