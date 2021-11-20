@@ -7,6 +7,11 @@ from tkinter import ttk
 
 from googletrans import Translator
 
+# Ra misy tsy mazava d manotania ilay olona nanoratra ilay code,
+# chaque fonction ataonareo asio commentaire fon mba hafantarany hafa ny zavatra nataonareo
+# ref misy tsy mandeha dia omeo atao ny olona hafa ilay izy na mangataha hevitra amin'ny namana
+# fa lasa simba ny asa ny olona rah forcena atao push ilay izy
+# izany no atao hoe travail en equipe
 
 # espace de definition de fonction
 
@@ -82,7 +87,6 @@ home.resizable(0,0)
  # declaration des variables
 inputString = StringVar()
 status = IntVar()
-inputString = StringVar()
 
 #importation du frame de l'application
 imgFrame = PhotoImage(file="frames/frame.png")
