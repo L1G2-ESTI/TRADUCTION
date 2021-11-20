@@ -8,9 +8,9 @@ def translate():
     translator = Translator()
     if status.get() == 1:
         # translation in english
-        resultat = translator.translat(inputString.get(), src="en", dest="fr")
+        resultat = translator.translate(inputString.get(), src="fr", dest="en")
         if resultat:
-            result['text'] = resultat['text']
+            result['text'] = resultat.text
         else:
             result['text'] = "non trouvé"
             
@@ -18,9 +18,9 @@ def translate():
 
     elif status.get() == 0:
         # translation in french
-        resultat = translator.translat(inputString.get(), src="fr", dest="en")
+        resultat = translator.translate(inputString.get(), src="en", dest="fr")
         if resultat:
-            result['text'] = resultat['text']
+            result['text'] = resultat.text
         else:
             result['text'] = "non trouvé"
            
