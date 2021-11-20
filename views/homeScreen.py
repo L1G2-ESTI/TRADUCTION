@@ -4,8 +4,6 @@ from tkinter import ttk
 
 # function definitions zone
 
-
-
 def translate(event):
     # open donnees.txt
     file = open("donnees.txt")
@@ -22,6 +20,7 @@ def translate(event):
                 result['text'] = english
                 return True
             
+            
 
         elif status.get() == 0:
             # translation in french
@@ -31,11 +30,32 @@ def translate(event):
     
     file.close()
 
-def Traduction():
-    messagebox.showinfo("TRADUCTION...", "Votre texte est en cours de traduction")
-def Inversion():
-    messagebox.showinfo("INVERSION...", "Votre traduction a bien été inversé")
+def radioBouton(master, text, variable, value):
+    new = Radiobutton(master, 
+                      text=text,
+                      variable=variable,
+                      value=value,
+                      activebackground="#252525",
+                      background="#252525",
+                      foreground="grey",
+                      activeforeground="grey",
+                      highlightthickness=0,
+                      borderwidth=0,
+                      height=2
+                    )
+    return new
 
+
+def traduction():
+    #messagebox.showinfo("TRADUCTION...", "Votre texte est en cours de traduction")
+    pass
+
+def inversion():
+    #messagebox.showinfo("INVERSION...", "Votre traduction a bien été inversé")
+    if status.get() == 0:
+        status.set(1)
+    else:
+        status.set(0)
 
 def bouton(text, command=None):
     new = Button(
@@ -55,64 +75,62 @@ def bouton(text, command=None):
 
 
 
-home = Tk()#initialise la fenêtre principale
-home.title("Dictionaire")#titre de la fenêtre principale
+# initialise la fenêtre principale
+home = Tk()
+
+# titre de la fenêtre principale
+home.title("Dictionaire")
 home.geometry("1000x610")
+# rendre la fenetre non redimensionnable
+home.resizable(0,0)
+ 
+ # declaration des variables
 inputString = StringVar()
 status = IntVar()
-imgFrame = PhotoImage(file="frames/frame.png") #importation du frame de l'application
-label1 = Label( home, image = imgFrame)
-label1.place(x = 0, y = 0)#mettre à zero la place de l'image pour qu'il se positionne par défeaut
-frame1 = Frame(home)#metre l'image dans la fenetre home
-frame1.pack(pady = 20 )
-home.resizable(0,0)#à 0,0 la taille de la fenetre ne peut plus etre modifié
-
 inputString = StringVar()
+
+#importation du frame de l'application
+imgFrame = PhotoImage(file="frames/frame.png")
+
+# metre l'image dans la fenetre home
+label1 = Label( home, image = imgFrame)
+label1.place(x = 0, y = 0)
+
+frame1 = Frame(home)
+frame1.pack(pady = 20)
+
 texte_mot = ttk.Entry(home, textvariable=inputString)
 texte_mot.place(x=320, y=119, width=280, height=30)
 
 #configuration du boutton Traduire
-traduireButton = bouton("Traduire", Traduction)
+traduireButton = bouton("Traduire", traduction)
 traduireButton.bind('<Button-1>', translate)
 traduireButton.place(x=640, y=119, width=80, height=30)
 
-statusFrame = Label(home, background="#55bf76", highlightthickness=0, borderwidth=0)
-toFrench = Radiobutton(statusFrame,
-                       text="Français",
-                       value=0,
-                       variable=status,
-                       activebackground="#55bf76",
-                       background="#55bf76",
-                       activeforeground="black",
-                       highlightthickness=0,
-                       borderwidth=0,
-                       height=2
-                       )
-toFrench.grid(row=0, column=0)
-
-toEnglish = Radiobutton(statusFrame,
-                        text="Anglais",
-                        value=1,
-                        variable=status,
-                        activebackground="#55bf76",
-                        background="#55bf76",
-                        activeforeground="black",
-                        highlightthickness=0, 
-                        borderwidth=0,
-                        height=2
-                       )
-
-toEnglish.grid(row=0, column=1)
-
+statusFrame = Frame(home, 
+                    background="#55bf76", 
+                    highlightthickness=0,
+                    borderwidth=0
+                    )
 statusFrame.place(x=300, y=165)
 
+# enfants de statusFrame
+toFrench = radioBouton(statusFrame, "Français", status, 0)
+toFrench.grid(row=0, column=0)
+
+toEnglish = radioBouton(statusFrame, "Anglais", status, 1)
+toEnglish.grid(row=0, column=1)
 
 
 #configuration du boutton changer de langue
-inversetraduireButton = bouton("OK", Inversion)
+inversetraduireButton = bouton("OK", inversion)
 inversetraduireButton.place(x=593, y=452, width=40, height=30)
 
-result = Label(home, bg="white", width=50, height=10)
+result = Label(home, 
+               bg="white", 
+               width=50, 
+               height=10
+               )
 result.place(x=317, y=250)
 
 home.mainloop()
