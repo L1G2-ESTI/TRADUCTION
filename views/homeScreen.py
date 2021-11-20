@@ -7,15 +7,36 @@ from tkinter import ttk
 
 from googletrans import Translator
 
-# Ra misy tsy mazava d manotania ilay olona nanoratra ilay code,
-# chaque fonction ataonareo asio commentaire fon mba hafantarany hafa ny zavatra nataonareo
-# ref misy tsy mandeha dia omeo atao ny olona hafa ilay izy na mangataha hevitra amin'ny namana
-# fa lasa simba ny asa ny olona rah forcena atao push ilay izy
-# izany no atao hoe travail en equipe
 
 # espace de definition de fonction
 
 def translate(event):
+    ##offline
+    ##open donnees.txt
+    # file = open("donnees.txt")
+    # datas = file.readlines()
+    # for data in datas:
+    #     dataList = data.split('=')
+    #     english = dataList[0]
+    #     french = str(dataList[1]).split('\n')[0] 
+    
+    
+    #    if status.get() == 1:
+            ## translation in english
+            # if inputString.get() in french:
+            #    result['text'] = english
+            #    print(result['text'])
+            #    return True
+            
+
+    #    elif status.get() == 0:
+            ## translation in french
+            # if inputString.get() in english:
+            #    result["text"] = french      
+            #    return True      
+    
+    # file.close()
+
     translator = Translator()
     if status.get() == 1:
         # translation in english
@@ -28,6 +49,8 @@ def translate(event):
         resultat = translator.translate(inputString.get(), src="en", dest="fr")
         if resultat:
             result['text'] = resultat.text
+
+
 
 
 def radioBouton(master, text, variable, value):
@@ -87,6 +110,7 @@ home.resizable(0,0)
  # declaration des variables
 inputString = StringVar()
 status = IntVar()
+inputString = StringVar()
 
 #importation du frame de l'application
 imgFrame = PhotoImage(file="frames/frame.png")
@@ -127,9 +151,9 @@ inversetraduireButton = bouton("OK", inversion)
 inversetraduireButton.place(x=593, y=452, width=40, height=30)
 
 result = Label(home, 
-               bg="#a7e665",
+               bg="white", 
                width=50, 
-               height=9,
+               height=10
                )
 result.place(x=317, y=250)
 
