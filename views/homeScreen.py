@@ -127,9 +127,9 @@ inversetraduireButton = bouton("OK", inversion)
 inversetraduireButton.place(x=593, y=452, width=40, height=30)
 
 result = Label(home, 
-               bg="white", 
+               bg="#a7e665",
                width=50, 
-               height=10
+               height=9,
                )
 result.place(x=317, y=250)
 

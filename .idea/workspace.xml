@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e13b6a40-2c67-424a-b21d-f23263dd46f3" name="Changes" comment="finission frame">
+    <list default="true" id="e13b6a40-2c67-424a-b21d-f23263dd46f3" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/homeScreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/homeScreen.py" afterDir="false" />
     </list>
@@ -33,7 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
   </component>
-  <component name="RunManager" selected="Python.traduction-template">
+  <component name="RunManager" selected="Python.homeScreen">
     <configuration name="homeScreen" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TRADUCTION" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,8 +78,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.traduction-template" />
         <item itemvalue="Python.homeScreen" />
+        <item itemvalue="Python.traduction-template" />
       </list>
     </recent_temporary>
   </component>
@@ -127,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635749438654</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary=".">
+      <created>1637418183251</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1637418183252</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,6 +155,7 @@
     <MESSAGE value="boutton, palette" />
     <MESSAGE value="bouton 2" />
     <MESSAGE value="finission frame" />
-    <option name="LAST_COMMIT_MESSAGE" value="finission frame" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
