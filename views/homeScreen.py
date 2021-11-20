@@ -17,18 +17,13 @@ def translate(event):
         resultat = translator.translate(inputString.get(), src="fr", dest="en")
         if resultat:
             result['text'] = resultat.text
-        else:
-            result['text'] = "non trouvé"
-            
-            
 
     elif status.get() == 0:
         # translation in french
         resultat = translator.translate(inputString.get(), src="en", dest="fr")
         if resultat:
             result['text'] = resultat.text
-        else:
-            result['text'] = "non trouvé"
+
 
 def radioBouton(master, text, variable, value):
     new = Radiobutton(master, 
@@ -47,8 +42,8 @@ def radioBouton(master, text, variable, value):
 
 
 def traduction():
-    #messagebox.showinfo("TRADUCTION...", "Votre texte est en cours de traduction")
-    pass
+    messagebox.showinfo("TRADUCTION...", "Votre texte est en cours de traduction")
+    
 
 def inversion():
     #messagebox.showinfo("INVERSION...", "Votre traduction a bien été inversé")

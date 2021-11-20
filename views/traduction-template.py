@@ -11,18 +11,12 @@ def translate():
         resultat = translator.translate(inputString.get(), src="fr", dest="en")
         if resultat:
             result['text'] = resultat.text
-        else:
-            result['text'] = "non trouvé"
-            
-            
 
     elif status.get() == 0:
         # translation in french
         resultat = translator.translate(inputString.get(), src="en", dest="fr")
         if resultat:
             result['text'] = resultat.text
-        else:
-            result['text'] = "non trouvé"
            
 window = Tk()
 window.geometry("400x375")
