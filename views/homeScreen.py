@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import messagebox
 from tkinter import ttk
 
-# function definitions zone
+# espace de definition de fonction
 
 def translate(event):
     # open donnees.txt
@@ -100,6 +100,7 @@ frame1 = Frame(home)
 frame1.pack(pady = 20)
 
 texte_mot = ttk.Entry(home, textvariable=inputString)
+texte_mot.bind('<Return>', translate)
 texte_mot.place(x=320, y=119, width=280, height=30)
 
 #configuration du boutton Traduire

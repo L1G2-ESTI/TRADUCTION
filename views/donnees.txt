@@ -1,6 +1,0 @@
-english=anglais
-french=français
-i=je
-a=b
-c=h
-q=p

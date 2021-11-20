@@ -1,34 +1,29 @@
 from tkinter import *
-
+# adoption de googletrans
+from googletrans import Translator
 ## FUNCTIONS
 
 
 def translate():
-    # open donnees.txt
-    file = open("donnees.txt")
-    datas = file.readlines()
-    for data in datas:
-        dataList = data.split('=')
-        english = dataList[0]
-        french = str(dataList[1]).split('\n')[0] 
-    
-    
-        if status.get() == 1:
-            # translation in english
-            if inputString.get() in french:
-                result['text'] = english
-                return True
+    translator = Translator()
+    if status.get() == 1:
+        # translation in english
+        resultat = translator.translat(inputString.get(), src="en", dest="fr")
+        if resultat:
+            result['text'] = resultat['text']
+        else:
+            result['text'] = "non trouvé"
+            
             
 
-        elif status.get() == 0:
-            # translation in french
-            if inputString.get() in english:
-                result["text"] = french      
-                return True      
-    
-    file.close()
-
-
+    elif status.get() == 0:
+        # translation in french
+        resultat = translator.translat(inputString.get(), src="fr", dest="en")
+        if resultat:
+            result['text'] = resultat['text']
+        else:
+            result['text'] = "non trouvé"
+           
 window = Tk()
 window.geometry("400x375")
 window.resizable("false","false") # unable resizable
