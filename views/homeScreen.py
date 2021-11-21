@@ -10,7 +10,6 @@ from googletrans import Translator
 
 # le fonction qui permet d'utiliser le mode offline
 def traductionOffline(event):
-    
 ##offline
 ##open donnees.txt
     file = open("frames/dictionnaire.txt")
@@ -60,8 +59,8 @@ def radioBouton(master, text, variable, value):
                       value=value,
                       activebackground="#252525",
                       background="#24242c",
-                      foreground="grey",
-                      activeforeground="grey",
+                      foreground="gray",
+                      activeforeground="gray",
                       highlightthickness=0,
                       borderwidth=0,
                       height=2
