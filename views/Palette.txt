@@ -2,4 +2,11 @@
 b0e279,55bf76,24242c,84844c,5b6b43,54543c,3a4434,345444,3c3c34
 
 /* Array */
-["b0e279","55bf76","24242c","84844c","5b6b43","54543c","3a4434","345444","3c3c34"]
+[
+jaune+verte: "b0e279",
+verte:"55bf76",
+darkblue:"24242c",
+marron+jaune:"84844c","5b6b43",
+marron sombre:"54543c","3a4434",
+verte+marron:"345444",
+marron +gris: "3c3c34"]
