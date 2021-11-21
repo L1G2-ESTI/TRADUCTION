@@ -2,9 +2,9 @@ Bonjour : Good morning
 Bonsoir : Good evening
 Salut   : Hello
 Non     : no
-Merci   : thank you 
-mère    : mother 
-père    : father 
+Merci   : thank you
+mère    : mother
+père    : father
 enfant  : child
 grand-père : grandfather
 grand-mère : grandmother

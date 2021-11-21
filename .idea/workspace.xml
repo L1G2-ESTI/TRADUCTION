@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e13b6a40-2c67-424a-b21d-f23263dd46f3" name="Changes" comment="update front">
+    <list default="true" id="e13b6a40-2c67-424a-b21d-f23263dd46f3" name="Changes" comment="add ui">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Palette.txt" beforeDir="false" afterPath="$PROJECT_DIR$/views/Palette.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dictionnaire.txt" beforeDir="false" afterPath="$PROJECT_DIR$/views/dictionnaire.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/homeScreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/homeScreen.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +30,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views" />
+      <recent name="$PROJECT_DIR$/views/frames" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.homeScreen">
     <configuration name="homeScreen" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -139,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637427662355</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add ui">
+      <created>1637437454919</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1637437454919</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +175,7 @@
     <MESSAGE value="finission frame" />
     <MESSAGE value="." />
     <MESSAGE value="update front" />
-    <option name="LAST_COMMIT_MESSAGE" value="update front" />
+    <MESSAGE value="add ui" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ui" />
   </component>
 </project>
