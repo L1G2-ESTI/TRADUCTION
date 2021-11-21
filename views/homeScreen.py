@@ -110,7 +110,7 @@ home.resizable(0,0)
  # declaration des variables
 inputString = StringVar()
 status = IntVar()
-inputString = StringVar()
+
 
 #importation du frame de l'application
 imgFrame = PhotoImage(file="frames/frame.png")
