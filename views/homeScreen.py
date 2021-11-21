@@ -10,6 +10,7 @@ from googletrans import Translator
 
 # le fonction qui permet d'utiliser le mode offline
 def traductionOffline(event):
+    
 ##offline
 ##open donnees.txt
     file = open("frames/dictionnaire.txt")
