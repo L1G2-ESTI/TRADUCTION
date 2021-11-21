@@ -59,8 +59,8 @@ def radioBouton(master, text, variable, value):
                       value=value,
                       activebackground="#252525",
                       background="#24242c",
-                      foreground="gray",
-                      activeforeground="gray",
+                      foreground="grey",
+                      activeforeground="grey",
                       highlightthickness=0,
                       borderwidth=0,
                       height=2
